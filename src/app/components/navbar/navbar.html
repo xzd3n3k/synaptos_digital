@@ -1,0 +1,20 @@
+<div class="navbar-container">
+  <syd-button class="nav-btn" size="icon" variant="ghost" (click)="toggleNavbar()">
+    <syd-icon class="menu-icon" name="menu_icon" color="white"></syd-icon>
+  </syd-button>
+
+  <nav #navRef class="nav">
+    <syd-button class="nav-btn nav-close-btn" size="icon" variant="ghost" (click)="toggleNavbar()">
+      <syd-icon class="close-icon" name="close_icon" color="white"></syd-icon>
+    </syd-button>
+
+    @for (navLink of navLinks(); track navLink.route) {
+      <a [class.disabled]="navLink.disabled" [routerLink]="navLink.route" (click)="navLink.clickFunction()">{{navLink.label | translate}}</a>
+    }
+  </nav>
+
+  <syd-button routerLink="/home" variant="ghost" size="icon">
+    <!-- TODO create and add logos -->
+<!--    <syd-icon [name]="isMobile() ? 'syd_icon' : 'syd_text_icon'" [height]="32" color="rawIcon"></syd-icon>-->
+  </syd-button>
+</div>
