@@ -1,0 +1,18 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.footer-container {
+  padding: var(--padding-base) calc(var(--padding-base)* 10);
+  * {
+    justify-self: left;
+    text-align: right;
+  }
+}
+
+.footer-copyright {
+  font-size: var(--text-size-small);
+  letter-spacing: 0.08rem;
+}
