@@ -8,11 +8,11 @@
 			"schematics": {
 				"@schematics/angular:component": {
 					"style": "scss"
-				}
+        }
 			},
 			"root": "",
 			"sourceRoot": "src",
-			"prefix": "app",
+			"prefix": "syd",
 			"architect": {
 				"build": {
 					"builder": "@angular/build:application",
