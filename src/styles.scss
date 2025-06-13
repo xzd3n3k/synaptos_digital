@@ -1,1 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
+@use "globals" as *;
+@use "variables" as *;
+
+@font-face {
+  font-family: "GilroyBold";
+  src: local("GilroyBold"),
+  url("./assets/fonts/Gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "GilroyRegular";
+  src: local("GilroyRegular"),
+  url("./assets/fonts/Gilroy/Gilroy-Regular.ttf") format("truetype");
+}
+
+html, body {
+  height: 100%
+}
+
+html {
+  background-color: var(--theme-background); // TODO think about using --theme-color-secondary-900 instead
+  font-size: 14px;
+}
+
+body {
+  font-family: 'GilroyBold';
+  letter-spacing: 0.15em;
+  color: var(--text-color-primary);
+
+  span {
+    font-family: 'GilroyRegular';
+  }
+
+  b, strong {
+    font-family: 'GilroyBold';
+    font-weight: bold;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+}
+
+.page-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.page-container {
+  flex: 1;
+  overflow: auto;
+}
