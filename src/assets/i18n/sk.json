@@ -1,0 +1,11 @@
+{
+  "i18n": {
+    "footer": {
+      "copyright": "Všetky práva vyhradené."
+    },
+    "navbar": {
+      "home": "Domov",
+      "about": "O nás"
+    }
+  }
+}
