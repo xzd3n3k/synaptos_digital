@@ -1,0 +1,102 @@
+:host {
+  display: inline-flex;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--button-padding-base) calc(var(--button-padding-base) * 1.5);
+  border-radius: 12px;
+  font-size: var(--text-size-base);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  gap: var(--gap-base);
+
+  // color variants
+  &--primary {
+    background-color: var(--theme-color-primary-400);
+    color: var(--theme-color-common-800);
+
+    &:hover {
+      background-color: var(--theme-color-primary-500);
+    }
+
+    &:active {
+      background-color: var(--theme-color-primary-700);
+    }
+  }
+
+  &--secondary {
+    background-color: var(--theme-color-common-200);
+    color: var(--theme-color-common-800);
+    border-color: var(--theme-color-common-300);
+
+    &:hover {
+      background-color: var(--theme-color-common-300);
+    }
+
+    &:active {
+      background-color: var(--theme-color-common-400);
+    }
+  }
+
+  &--destructive {
+    background-color: var(--color-danger-primary);
+    color: var(--theme-color-common-100);
+
+    &:hover {
+      background-color: var(--color-danger-secondary);
+    }
+
+    &:active {
+      background-color: var(--color-danger-dark);
+    }
+  }
+
+  &--success {
+    background-color: var(--color-success-primary);
+    color: var(--theme-color-common-100);
+
+    &:hover {
+      background-color: var(--color-success-secondary);
+    }
+
+    &:active {
+      background-color: var(--color-success-dark);
+    }
+  }
+
+  &--ghost {
+    background-color: transparent;
+    color: var(--theme-color-common-900);
+    border-color: transparent;
+
+    &:hover {
+      background-color: var(--theme-color-common-200);
+    }
+  }
+
+  // sizes
+  &--icon {
+    padding: 4px;
+  }
+
+  &--small {
+    padding: var(--button-padding-base-half) var(--button-padding-base);
+    font-size: var(--text-size-small);
+  }
+
+  &--large {
+    padding: calc(var(--button-padding-base) * 1.5) calc(var(--button-padding-base) * 2);
+    font-size: var(--text-size-large);
+  }
+
+  // states
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
