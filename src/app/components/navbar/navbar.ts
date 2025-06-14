@@ -27,6 +27,7 @@ export class Navbar {
     { label: 'i18n.navbar.home', route: '/home', clickFunction: () => this.toggleNavbar() },
     { label: 'FAQ', route: '/faq', clickFunction: () => this.toggleNavbar(), disabled: true },
     { label: 'i18n.navbar.about', route: '/about', clickFunction: () => this.toggleNavbar(), disabled: true },
+    { label: 'i18n.navbar.services', route: '/our-services', clickFunction: () => this.toggleNavbar() },
   ]);
 
   protected toggleNavbar() {

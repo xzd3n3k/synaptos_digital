@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import {HomeScreen} from './screens/home-screen/home-screen';
 import {DesignSystem} from './screens/design-system/design-system';
+import {OurServices} from './screens/our-services/our-services';
 
 export const routes: Routes = [
   {
@@ -11,6 +12,10 @@ export const routes: Routes = [
   {
     path: 'home',
     component: HomeScreen,
+  },
+  {
+    path: 'our-services',
+    component: OurServices,
   },
   {
     path: 'design-system',

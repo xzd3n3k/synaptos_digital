@@ -5,6 +5,7 @@
     },
     "navbar": {
       "home": "Home",
+      "services": "Our Services",
       "about": "About"
     },
     "home": {
