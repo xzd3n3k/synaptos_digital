@@ -13,7 +13,8 @@ export class Button {
   readonly variant = input<ButtonVariant>('primary');
   readonly size = input<ButtonSize>('normal');
   readonly disabled = input<boolean>(false);
-  readonly shape = input<ButtonShape>('rounded')
+  readonly shape = input<ButtonShape>('rounded');
+  readonly outline = input(false);
 
   readonly element: HTMLElement;
 

@@ -18,54 +18,65 @@
   // color variants
   &--primary {
     background-color: var(--theme-color-primary-400);
+    border-color: var(--theme-color-primary-400);
     color: var(--theme-color-secondary-800);
 
     &:hover {
       background-color: var(--theme-color-primary-500);
+      border-color: var(--theme-color-primary-500);
     }
 
     &:active {
       background-color: var(--theme-color-primary-700);
+      border-color: var(--theme-color-primary-700);
     }
   }
 
   &--secondary {
     background-color: var(--theme-color-secondary-200);
     color: var(--theme-color-secondary-800);
-    border-color: var(--theme-color-secondary-300);
+    border-color: var(--theme-color-secondary-200);
 
     &:hover {
       background-color: var(--theme-color-secondary-300);
+      border-color: var(--theme-color-secondary-300);
     }
 
     &:active {
       background-color: var(--theme-color-secondary-400);
+      border-color: var(--theme-color-secondary-400);
     }
   }
 
   &--destructive {
     background-color: var(--color-danger-primary);
+    border-color: var(--color-danger-primary);
     color: var(--theme-color-secondary-100);
 
     &:hover {
       background-color: var(--color-danger-secondary);
+      border-color: var(--color-danger-secondary);
     }
 
     &:active {
       background-color: var(--color-danger-active);
+      border-color: var(--color-danger-active);
     }
   }
 
   &--success {
     background-color: var(--color-success-primary);
+    border-color: var(--color-success-primary);
     color: var(--theme-color-secondary-100);
 
     &:hover {
       background-color: var(--color-success-secondary);
+      border-color: var(--color-success-secondary);
     }
 
     &:active {
       background-color: var(--color-success-active);
+      border-color: var(--color-success-active);
     }
   }
 
@@ -101,6 +112,27 @@
 
   &--pill {
     border-radius: 100px;
+  }
+
+  // outline
+  &--outline {
+    background-color: transparent;
+  }
+
+  &--outline.button--destructive {
+    color: var(--color-danger-primary);
+
+    &:hover {
+      color: var(--theme-color-secondary-100);
+    }
+  }
+
+  &--outline.button--success {
+    color: var(--color-success-primary);
+
+    &:hover {
+      color: var(--theme-color-secondary-100);
+    }
   }
 
   // states

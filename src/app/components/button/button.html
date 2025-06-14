@@ -1,3 +1,6 @@
-<button [class]="'button ' + 'button--' + variant() + ' button--' + size() + ' button--' + shape()" [disabled]="disabled()">
+<button
+  [class]="'button ' + 'button--' + variant() + ' button--' + size() + ' button--' + shape()"
+  [class.button--outline]="outline()"
+  [disabled]="disabled()">
   <ng-content></ng-content>
 </button>
