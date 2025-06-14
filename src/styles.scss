@@ -53,4 +53,23 @@ body {
 .page-container {
   flex: 1;
   overflow: auto;
+  margin-right: 6px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+
+  &:hover {
+    background: grey;
+  }
+}
+
+:root {
+  scrollbar-color: grey transparent !important;
+  scrollbar-width: thin !important;
 }
