@@ -6,6 +6,11 @@
     "navbar": {
       "home": "Domov",
       "about": "O nás"
+    },
+    "home": {
+      "heading": "Webové aplikácie a stránky, ktoré fungujú.",
+      "subheading": "Tvoríme moderné webové aplikácie a stránky, ktoré posúvajú váš biznis vpred.",
+      "text": "Chcete vyniknúť v digitálnom svete? Sme mladý a dynamický tím skúsených programátorov s dlhoročnou praxou a vášňou pre tvorbu špičkových webových riešení na mieru. Či už potrebujete efektívnu webovú aplikáciu na automatizáciu procesov alebo pútavú webovú stránku, ktorá osloví vašich zákazníkov, sme tu na to, aby sme vašu víziu premenili na funkčnú a spoľahlivú realitu. Spoľahnite sa na individuálny prístup, najnovšie technológie a dokonale čistý kód."
     }
   }
 }
