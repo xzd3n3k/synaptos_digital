@@ -1,0 +1,42 @@
+:host {
+  display: block;
+  height: 100%;
+  width: 100%;
+
+  padding: var(--padding-base) calc(var(--padding-base) * 10);
+}
+
+//.home-background-image {
+//  height: 100vh;
+//  width: 100vw;
+//  background-image: url('/assets/images/mclaren.jpg');
+//  background-size: cover;
+//  background-position: center;
+//  background-repeat: no-repeat;
+//  background-blend-mode: overlay;
+//  background-color: rgba(0, 0, 0, 0.7);
+//  top: 0;
+//  left: 0;
+//  position: absolute;
+//  z-index: var(--z-index-background);
+//}
+
+.home-page-container {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--gap-base) * 4);
+  height: 100%;
+}
+
+.home-page-subheading {
+  display: inline-block;
+  font-size: var(--text-size-large);
+  color: white;
+  overflow: auto;
+}
+
+.home-page-info-text {
+  display: inline-block;
+  color: white;
+  overflow: auto;
+}
