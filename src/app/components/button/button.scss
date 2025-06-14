@@ -14,11 +14,12 @@
   transition: all 0.2s ease;
   border: 1px solid transparent;
   gap: var(--gap-base);
+  user-select: none;
 
   // color variants
   &--primary {
     background-color: var(--theme-color-primary-400);
-    color: var(--theme-color-common-800);
+    color: var(--theme-color-secondary-800);
 
     &:hover {
       background-color: var(--theme-color-primary-500);
@@ -30,52 +31,52 @@
   }
 
   &--secondary {
-    background-color: var(--theme-color-common-200);
-    color: var(--theme-color-common-800);
-    border-color: var(--theme-color-common-300);
+    background-color: var(--theme-color-secondary-200);
+    color: var(--theme-color-secondary-800);
+    border-color: var(--theme-color-secondary-300);
 
     &:hover {
-      background-color: var(--theme-color-common-300);
+      background-color: var(--theme-color-secondary-300);
     }
 
     &:active {
-      background-color: var(--theme-color-common-400);
+      background-color: var(--theme-color-secondary-400);
     }
   }
 
   &--destructive {
     background-color: var(--color-danger-primary);
-    color: var(--theme-color-common-100);
+    color: var(--theme-color-secondary-100);
 
     &:hover {
       background-color: var(--color-danger-secondary);
     }
 
     &:active {
-      background-color: var(--color-danger-dark);
+      background-color: var(--color-danger-active);
     }
   }
 
   &--success {
     background-color: var(--color-success-primary);
-    color: var(--theme-color-common-100);
+    color: var(--theme-color-secondary-100);
 
     &:hover {
       background-color: var(--color-success-secondary);
     }
 
     &:active {
-      background-color: var(--color-success-dark);
+      background-color: var(--color-success-active);
     }
   }
 
   &--ghost {
     background-color: transparent;
-    color: var(--theme-color-common-900);
+    color: var(--theme-color-secondary-900);
     border-color: transparent;
 
     &:hover {
-      background-color: var(--theme-color-common-200);
+      background-color: var(--theme-color-secondary-200);
     }
   }
 
@@ -97,6 +98,6 @@
   // states
   &:disabled {
     opacity: 0.6;
-    cursor: not-allowed;
+    pointer-events: none;
   }
 }
