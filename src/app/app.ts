@@ -1,8 +1,9 @@
 import {Component, inject, signal} from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Router, RouterOutlet} from '@angular/router';
 import {TranslateModule, TranslateService} from '@ngx-translate/core';
 import {LanguageSelector} from './components/language-selector/language-selector';
 import {Navbar} from './components/navbar/navbar';
+import {takeUntilDestroyed} from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'syd-root',
@@ -17,7 +18,7 @@ import {Navbar} from './components/navbar/navbar';
 })
 export class App {
   private readonly translateService = inject(TranslateService);
-
+  private readonly router = inject(Router);
   protected readonly currentYear = signal(new Date().getFullYear());
 
   constructor() {
@@ -33,6 +34,8 @@ export class App {
 
     const browserLang = this.translateService.getBrowserLang();
     this.translateService.use(browserLang?.match(/en|cs|sk/) ? browserLang : 'cs');
+
+    this.router.events.pipe(takeUntilDestroyed()).subscribe((event) => {console.log('router event: ', event);});
   }
 
   switchLang(lang: string) {
