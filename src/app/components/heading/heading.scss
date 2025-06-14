@@ -1,0 +1,11 @@
+:host {
+  display: inline-block;
+  font-size: var(--text-heading-size);
+  font-weight: bold;
+
+  * {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+  }
+}
