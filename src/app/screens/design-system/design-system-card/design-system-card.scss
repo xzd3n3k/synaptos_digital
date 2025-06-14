@@ -1,0 +1,27 @@
+.design-system-card-container {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 12px;
+  width: 350px;
+  height: 350px;
+}
+
+.card-header {
+  border-bottom: 1px solid black;
+  padding: 12px;
+}
+
+.card-content {
+  padding: 12px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.card-description {
+  padding: 12px;
+  font-size: var(--text-size-small);
+}

@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  height: 100%;
+  width: 100%;
+
+  padding: var(--padding-base) calc(var(--padding-base) * 4);
+}
+
+.design-system-page-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--gap-base) * 4);
+  height: 100%;
+}
