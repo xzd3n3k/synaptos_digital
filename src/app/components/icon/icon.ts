@@ -13,6 +13,8 @@ export class Icon {
   readonly name = input.required<string>();
   readonly size = input<number>(32);
   readonly color = input<string>('currentColor');
+  readonly height = input<number>();
+  readonly width = input<number>();
 
   private readonly http = inject(HttpClient);
   private readonly sanitizer = inject(DomSanitizer);

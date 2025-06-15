@@ -1,7 +1,7 @@
 <div
   class="svg-icon"
-  [style.width.px]="size()"
-  [style.height.px]="size()"
+  [style.width.px]="width() ?? size()"
+  [style.height.px]="height() ?? size()"
   [style.fill]="color()"
   [innerHTML]="svgContent()"
 ></div>
