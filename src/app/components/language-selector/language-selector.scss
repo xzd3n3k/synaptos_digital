@@ -7,10 +7,12 @@
   flex-direction: column;
 }
 
-.current-language-text {
-  color: white;
+.language-selector-button {
+  ::ng-deep button {
+    color: white;
 
-  &:hover {
-    color: var(--text-color-secondary);
+    &:hover {
+      color: var(--text-color-secondary);
+    }
   }
 }
