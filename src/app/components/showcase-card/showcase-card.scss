@@ -1,0 +1,55 @@
+$card-items-gap: 24px;
+$card-border-radius: 24px;
+$card-padding: 20px;
+
+.showcase-card-container {
+  background-color: var(--theme-color-secondary-100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  gap: $card-items-gap;
+  padding: $card-padding * 2 $card-padding;
+  border-radius: $card-border-radius;
+  box-shadow: var(--box-shadow-card);
+
+  transition: opacity 0.6s, transform 0.6s;
+  transform: translateY(0px);
+
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: var(--box-shadow-card-hover);
+    transform: translateY(-5px);
+
+    &:before {
+      transform: scaleX(1);
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--theme-color-primary-500), var(--theme-color-primary-700));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+}
+
+.card-title {
+  font-size: var(--text-size-large);
+  color: var(--text-color-secondary);
+}
+
+.card-icon {
+  syd-icon {
+      padding: 6px;
+      background: linear-gradient(135deg, var(--theme-color-primary-500), var(--theme-color-primary-700));
+      border-radius: 50%;
+  }
+}

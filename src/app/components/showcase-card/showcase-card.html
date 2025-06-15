@@ -1,0 +1,9 @@
+<div class="showcase-card-container">
+  @if (icon()) {
+    <span class="card-icon"><syd-icon [name]="icon()" [size]="64"></syd-icon></span>
+  }
+  <span class="card-title"><strong>{{title() | translate}}</strong></span>
+  <div class="card-content">
+    <ng-content></ng-content>
+  </div>
+</div>

@@ -1,1 +1,17 @@
-<p>our-services works!</p>
+<div class="our-services-container">
+  <syd-showcase-card [title]="'i18n.services.customWebsites'" icon="browser_icon">
+    {{'i18n.services.customWebsitesText' | translate}}
+  </syd-showcase-card>
+  <syd-showcase-card [title]="'i18n.services.webApplications'" icon="lightning_icon">
+    {{'i18n.services.webApplicationsText' | translate}}
+  </syd-showcase-card>
+  <syd-showcase-card title="Mobile-First Design" icon="iphone_icon">
+    {{'i18n.services.mobileFirstDesignText' | translate}}
+  </syd-showcase-card>
+  <syd-showcase-card [title]="'i18n.services.performanceOptimization'" icon="performance_icon">
+    {{'i18n.services.performanceOptimizationText' | translate}}
+  </syd-showcase-card>
+  <syd-showcase-card [title]="'i18n.services.maintenanceSupport'" icon="maintenance_icon">
+    {{'i18n.services.maintenanceSupportText' | translate}}
+  </syd-showcase-card>
+</div>

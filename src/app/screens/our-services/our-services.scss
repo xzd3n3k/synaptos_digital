@@ -3,5 +3,14 @@
   height: 100%;
   width: 100%;
 
-  padding: var(--padding-base) calc(var(--padding-base) * 10);
+  padding: var(--padding-base) calc(var(--padding-base) * 6);
+  background-color: var(--theme-color-secondary-100);
+  overflow: auto;
+}
+
+.our-services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 20px;
 }
