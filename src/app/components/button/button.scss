@@ -107,11 +107,11 @@
 
   // shapes
   &--rounded {
-    border-radius: 12px;
+    border-radius: var(--border-radius-base-half)
   }
 
   &--pill {
-    border-radius: 100px;
+    border-radius: var(--border-radius-base-full);
   }
 
   // outline

@@ -11,4 +11,5 @@
   flex-wrap: wrap;
   gap: calc(var(--gap-base) * 4);
   height: 100%;
+  overflow: auto;
 }

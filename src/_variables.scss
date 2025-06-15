@@ -59,6 +59,10 @@
 
   --box-shadow-card: 0 10px 30px rgba(0,0,0,0.1);
   --box-shadow-card-hover: 0 20px 40px rgba(0,0,0,0.15);
+
+  --border-radius-base: 24px;
+  --border-radius-base-half: calc(var(--border-radius-base) / 2);
+  --border-radius-base-full: 100px;
 }
 
 @media (max-width: 1250px) {

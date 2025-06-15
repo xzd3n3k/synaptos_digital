@@ -1,5 +1,4 @@
 $card-items-gap: 24px;
-$card-border-radius: 24px;
 $card-padding: 20px;
 
 .showcase-card-container {
@@ -11,7 +10,7 @@ $card-padding: 20px;
 
   gap: $card-items-gap;
   padding: $card-padding * 2 $card-padding;
-  border-radius: $card-border-radius;
+  border-radius: var(--border-radius-base);
   box-shadow: var(--box-shadow-card);
 
   transition: opacity 0.6s, transform 0.6s;
