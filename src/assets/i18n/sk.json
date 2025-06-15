@@ -12,6 +12,17 @@
       "heading": "Webové aplikácie a stránky, ktoré fungujú.",
       "subheading": "Tvoríme moderné webové aplikácie a stránky, ktoré posúvajú váš biznis vpred.",
       "text": "Chcete vyniknúť v digitálnom svete? Sme mladý a dynamický tím skúsených programátorov s dlhoročnou praxou a vášňou pre tvorbu špičkových webových riešení na mieru. Či už potrebujete efektívnu webovú aplikáciu na automatizáciu procesov alebo pútavú webovú stránku, ktorá osloví vašich zákazníkov, sme tu na to, aby sme vašu víziu premenili na funkčnú a spoľahlivú realitu. Spoľahnite sa na individuálny prístup, najnovšie technológie a dokonale čistý kód."
+    },
+    "services": {
+      "customWebsites": "Webové stránky na mieru",
+      "customWebsitesText": "Ohromujúce, responzívne webové stránky prispôsobené vašej značke a obchodným cieľom. Od vstupných stránok až po zložité viacstranové weby.",
+      "webApplications": "Webové aplikácie",
+      "webApplicationsText": "Interaktívne webové aplikácie s modernými frameworkami ako React, Vue a Angular. Fullstackové riešenia s databázami a API.",
+      "mobileFirstDesignText": "Weby, ktoré vyzerajú výborne na mobile aj počítači. Prispôsobené pre každého používateľa, nech je kdekoľvek.",
+      "performanceOptimization": "Optimalizácia výkonu",
+      "performanceOptimizationText": "Bleskurýchle načítanie s optimalizáciou pre vyhľadávače (SEO), aby váš web lepšie zaujal a prilákal viac zákazníkov.",
+      "maintenanceSupport": "Údržba a podpora",
+      "maintenanceSupportText": "Priebežná podpora, aktualizácie a vylepšenia, ktoré zabezpečia bezpečnosť a najlepší výkon vášho webu."
     }
   }
 }

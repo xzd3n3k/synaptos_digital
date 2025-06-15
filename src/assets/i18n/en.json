@@ -12,6 +12,17 @@
       "heading": "Web applications and websites that work.",
       "subheading": "We create modern web applications and websites that move your business forward.",
       "text": "Want to stand out in the digital world? We are a young and dynamic team of experienced developers with years of practice and a passion for creating top-quality custom web solutions. Whether you need an efficient web application to automate processes or an engaging website to attract your customers, we’re here to turn your vision into a functional and reliable reality.Count on a personalized approach, cutting-edge technologies, and perfectly clean code."
+    },
+    "services": {
+      "customWebsites": "Custom websites",
+      "customWebsitesText": "Stunning, responsive websites tailored to your brand and business goals. From landing pages to complex multi-page sites.",
+      "webApplications": "Web applications",
+      "webApplicationsText": "Interactive web apps with modern frameworks like React, Vue, and Angular. Full-stack solutions with databases and APIs.",
+      "mobileFirstDesignText": "Every site we build looks perfect on all devices. Mobile-optimized experiences that engage users everywhere.",
+      "performanceOptimization": "Performance optimization",
+      "performanceOptimizationText": "Lightning-fast loading speeds and SEO optimization to help your site rank higher and convert better.",
+      "maintenanceSupport": "Maintenance & Support",
+      "maintenanceSupportText": "Ongoing support, updates, and improvements to keep your website secure and performing at its best."
     }
   }
 }
