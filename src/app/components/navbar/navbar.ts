@@ -1,7 +1,7 @@
-import {Component, ElementRef, signal, viewChild, WritableSignal} from '@angular/core';
+import {Component, ElementRef, inject, signal, viewChild, WritableSignal} from '@angular/core';
 import { isMobile, isSmallDevice } from '../../shared/utils/device.util';
 import {NavBarLink} from '../../shared/models/nav-bar-link.model';
-import {RouterLink} from '@angular/router';
+import {Router, RouterLink} from '@angular/router';
 import {TranslatePipe} from '@ngx-translate/core';
 import {Button} from '../button/button';
 import {Icon} from '../icon/icon';
@@ -18,9 +18,10 @@ import {Icon} from '../icon/icon';
   styleUrl: './navbar.scss'
 })
 export class Navbar {
+  protected readonly router = inject(Router);
+
   private readonly navRef = viewChild.required<ElementRef>('navRef');
 
-  protected readonly isMobile = isMobile;
   protected readonly isSmallDevice = isSmallDevice;
 
   protected readonly navLinks: WritableSignal<NavBarLink[]> = signal([

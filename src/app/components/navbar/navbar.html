@@ -9,7 +9,7 @@
     </syd-button>
 
     @for (navLink of navLinks(); track navLink.route) {
-      <a [class.disabled]="navLink.disabled" [routerLink]="navLink.route" (click)="navLink.clickFunction()">{{navLink.label | translate}}</a>
+      <a [class.active]="router.url === navLink.route" [class.disabled]="navLink.disabled" [routerLink]="navLink.route" (click)="navLink.clickFunction()">{{navLink.label | translate}}</a>
     }
   </nav>
 
