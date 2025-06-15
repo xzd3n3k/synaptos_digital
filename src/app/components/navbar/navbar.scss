@@ -9,6 +9,7 @@
     display: flex;
     gap: calc(var(--gap-base) * 6);
     font-size: var(--text-size-large);
+    z-index: var(--z-index-overlay);
 
     a {
       text-decoration: none;
@@ -16,6 +17,7 @@
       // TODO add variable and override in each screen/page
       color: white;
       align-content: center;
+      font-family: 'GilroyBold';
 
       &.disabled {
         opacity: 0.5;
