@@ -6,3 +6,11 @@
   display: flex;
   flex-direction: column;
 }
+
+.current-language-text {
+  color: white;
+
+  &:hover {
+    color: var(--text-color-secondary);
+  }
+}

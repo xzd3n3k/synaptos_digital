@@ -1,6 +1,6 @@
 <syd-button #origin variant="ghost" size="icon">
   <syd-icon color="rawIcon" [name]="currentLanguage()!.flag" [size]="24"></syd-icon>
-  {{ isMobile() ? '' : currentLanguage()!.label }}
+  <span class="current-language-text">{{ isMobile() ? '' : currentLanguage()!.label }}</span>
 </syd-button>
 
 <syd-popup [origin]="origin.element">
