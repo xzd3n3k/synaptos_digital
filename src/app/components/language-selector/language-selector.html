@@ -1,6 +1,8 @@
 <syd-button #origin class="language-selector-button" variant="ghost" size="icon">
   <syd-icon color="rawIcon" [name]="currentLanguage()!.flag" [size]="24"></syd-icon>
-  <span>{{ isMobile() ? '' : currentLanguage()!.label }}</span>
+  @if (!isMobile()) {
+    <span>{{ currentLanguage()!.label }}</span>
+  }
 </syd-button>
 
 <syd-popup [origin]="origin.element">
@@ -10,7 +12,9 @@
         <syd-menu-item (click)="switchLanguage(lang.code)">
           <span class="menu-item-content">
             <syd-icon color="rawIcon" [name]="lang.flag" [size]="24"></syd-icon>
-            {{ isMobile() ? '' : lang.label }}
+            @if (!isMobile()) {
+              {{lang.label}}
+            }
           </span>
         </syd-menu-item>
       }
