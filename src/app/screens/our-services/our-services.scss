@@ -4,8 +4,19 @@
   width: 100%;
 
   padding: var(--padding-base) calc(var(--padding-base) * 6);
-  background-color: var(--theme-color-secondary-100);
   overflow: auto;
+}
+
+.our-services-background-image {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.3) 0%, #0F2233 50%, rgba(0, 255, 255, 0.3) 100%);
+  background-size: cover;
+  background-blend-mode: overlay;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: var(--z-index-background);
 }
 
 .our-services-container {
