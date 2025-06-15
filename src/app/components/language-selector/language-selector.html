@@ -7,10 +7,12 @@
   <div class="language-selector-container">
     @for (lang of languages(); track lang.code) {
       @if (!lang.active) {
-        <syd-button (click)="switchLanguage(lang.code)" variant="ghost" size="icon">
-          <syd-icon color="rawIcon" [name]="lang.flag" [size]="24"></syd-icon>
-          {{ isMobile() ? '' : lang.label }}
-        </syd-button>
+        <syd-menu-item (click)="switchLanguage(lang.code)">
+          <span class="menu-item-content">
+            <syd-icon color="rawIcon" [name]="lang.flag" [size]="24"></syd-icon>
+            {{ isMobile() ? '' : lang.label }}
+          </span>
+        </syd-menu-item>
       }
     }
   </div>

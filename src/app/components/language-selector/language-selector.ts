@@ -5,13 +5,15 @@ import { isMobile } from '../../shared/utils/device.util';
 import {Button} from '../button/button';
 import {Icon} from '../icon/icon';
 import {Popup} from '../popup/popup';
+import {MenuItem} from '../menu-item/menu-item';
 
 @Component({
   selector: 'syd-language-selector',
   imports: [
     Button,
     Icon,
-    Popup
+    Popup,
+    MenuItem
   ],
   templateUrl: './language-selector.html',
   styleUrl: './language-selector.scss'
