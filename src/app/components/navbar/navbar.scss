@@ -5,6 +5,18 @@
   justify-content: space-between;
   padding: var(--padding-base) calc(var(--padding-base) * 6);
 
+  .logo-button {
+    .full-logo {
+      color: white;
+    }
+
+    &:hover {
+      .full-logo {
+        color: var(--text-color-secondary);
+      }
+    }
+  }
+
   .nav {
     display: flex;
     gap: calc(var(--gap-base) * 6);

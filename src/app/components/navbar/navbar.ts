@@ -23,6 +23,7 @@ export class Navbar {
   private readonly navRef = viewChild.required<ElementRef>('navRef');
 
   protected readonly isSmallDevice = isSmallDevice;
+  protected readonly isMobile = isMobile;
 
   protected readonly navLinks: WritableSignal<NavBarLink[]> = signal([
     { label: 'i18n.navbar.home', route: '/home', clickFunction: () => this.toggleNavbar() },

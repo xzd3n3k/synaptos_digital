@@ -13,8 +13,11 @@
     }
   </nav>
 
-  <syd-button routerLink="/home" variant="ghost" size="icon">
-    <!-- TODO create and add logo with text -->
-    <syd-icon name="syd_icon" [size]="48"></syd-icon>
+  <syd-button class="logo-button" routerLink="/home" variant="ghost" size="icon">
+    @if (isMobile()) {
+      <syd-icon name="syd_icon" [size]="48"></syd-icon>
+    } @else {
+      <syd-icon class="full-logo" name="syd_full_logo" [width]="128" [height]="48"></syd-icon>
+    }
   </syd-button>
 </div>
