@@ -1,4 +1,5 @@
 :root {
+  // primary palette
   --theme-color-primary-100: #e0f7f7;
   --theme-color-primary-200: #b3eded;
   --theme-color-primary-300: #80e0e0;
@@ -9,6 +10,7 @@
   --theme-color-primary-800: #0a5f5f;
   --theme-color-primary-900: #054040;
 
+  // secondary palette
   --theme-color-secondary-100: #ffffff;
   --theme-color-secondary-200: #f2f2f2;
   --theme-color-secondary-300: #d9d9d9;
@@ -19,6 +21,7 @@
   --theme-color-secondary-800: #404040;
   --theme-color-secondary-900: #1a1a1a;
 
+  // danger and success palette
   --color-danger-primary: #e63946;
   --color-danger-secondary: #c92f3b;
   --color-danger-active: #a32732;
@@ -27,6 +30,7 @@
   --color-success-secondary: #3e9a42;
   --color-success-active: #2f7c34;
 
+  // bg and text colors
   --theme-background: #0D1B2A;
   --theme-text-primary: #ffffff;
   --theme-text-accent: var(--theme-color-primary-500);
@@ -34,6 +38,7 @@
   --text-color-primary: var(--theme-color-primary-500);
   --text-color-secondary: var(--theme-color-secondary-900);
 
+  // padding variables
   --padding-base: 16px;
   --padding-base-half: calc(var(--padding-base) / 2);
   --padding-base-quarter: calc(var(--padding-base) / 4);
@@ -41,10 +46,12 @@
   --button-padding-base: 16px;
   --button-padding-base-half: calc(var(--button-padding-base) / 2);
 
+  // gap variables
   --gap-base: 8px;
   --gap-base-half: calc(var(--gap-base) / 2);
   --gap-base-quarter: calc(var(--gap-base) / 4);
 
+  // size variables
   --text-size-base: 14px;
   --text-size-small: 10px;
   --text-size-large: 20px;
@@ -53,13 +60,16 @@
 
   --button-size-base: 32px;
 
+  // z-indexes
   --z-index-base: 100;
   --z-index-background: -1;
   --z-index-overlay: 1000;
 
+  // box-shadows
   --box-shadow-card: 0 10px 30px rgba(0,0,0,0.1);
   --box-shadow-card-hover: 0 20px 40px rgba(0,0,0,0.15);
 
+  // border variables
   --border-radius-base: 24px;
   --border-radius-base-half: calc(var(--border-radius-base) / 2);
   --border-radius-base-full: 100px;
