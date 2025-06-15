@@ -36,3 +36,14 @@
   display: inline-block;
   color: white;
 }
+
+.home-header {
+  font-size: var(--text-heading-size);
+  background: linear-gradient(90deg, var(--theme-color-primary-400), #117aef);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* for better cross-browser support */
+  background-clip: text;
+  color: transparent;
+}
