@@ -1,0 +1,15 @@
+<div class="about-background-image"></div>
+<div class="about-page-container">
+  <div class="about-section">
+    <span class="section-header"><strong>{{'i18n.navbar.about' | translate}}</strong></span>
+    <span class="section-content">{{'i18n.about.digitalExperiences' | translate}}</span>
+  </div>
+  <div class="about-section">
+    <span class="section-header"><strong>{{'i18n.about.ourStory' | translate}}</strong></span>
+    <div class="section-content section-content--text-left">
+      @for (paragraph of textParagraphs(); track paragraph) {
+        <p>{{ paragraph }}</p>
+      }
+    </div>
+  </div>
+</div>

@@ -8,9 +8,9 @@ import {TranslatePipe} from '@ngx-translate/core';
     Heading,
     TranslatePipe
   ],
-  templateUrl: './home-screen.html',
-  styleUrl: './home-screen.scss'
+  templateUrl: './home.html',
+  styleUrl: './home.scss'
 })
-export class HomeScreen {
+export class Home {
 
 }

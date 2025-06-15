@@ -23,6 +23,11 @@
       "performanceOptimizationText": "Bleskově rychlé načítání s optimalizací pro vyhledávače (SEO), aby váš web lépe zaujal a přivedl více zákazníků.",
       "maintenanceSupport": "Údržba a podpora",
       "maintenanceSupportText": "Průběžná podpora, aktualizace a vylepšení, které zajistí bezpečnost a nejlepší výkon vašeho webu."
+    },
+    "about": {
+      "digitalExperiences": "Vytváříme digitální řešení, která posouvají firmy kupředu a propojují je s lidmi smysluplným způsobem.",
+      "story": "Už od prvního ročníku střední školy mě fascinoval svět webových stránek a aplikací. Místo hraní her jsem zkoumal kód, ladil detaily a učil se, jak propojit funkčnost s estetikou.\n\nPostupem času jsem si začal všímat, kolik firem i jednotlivců spoléhá na zastaralá nebo neefektivní digitální řešení – a právě to mě motivovalo k založení vlastní společnosti.\n\nZa sebou mám přes pět let zkušeností s vývojem webů a tři roky intenzivní práce na webových aplikacích.\n\nDnes pomáhám klientům budovat moderní, funkční a uživatelsky přívětivé digitální produkty, které mají smysl. Naším cílem je nejen dodávat kvalitní výsledek, ale skutečně pochopit potřeby klienta a nabídnout řešení, které jim pomůže růst, zefektivnit práci a lépe komunikovat se světem.",
+      "ourStory": "Náš příběh"
     }
   }
 }
