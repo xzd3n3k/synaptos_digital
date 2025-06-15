@@ -3,7 +3,7 @@
   flex-shrink: 0;
   align-items: center;
   justify-content: space-between;
-  padding: calc(var(--padding-base) * 2) calc(var(--padding-base) * 10);
+  padding: var(--padding-base) calc(var(--padding-base) * 6);
 
   .nav {
     display: flex;
