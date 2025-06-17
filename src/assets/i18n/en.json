@@ -6,7 +6,8 @@
     "navbar": {
       "home": "Home",
       "services": "Our Services",
-      "about": "About"
+      "about": "About",
+      "contacts": "Contacts"
     },
     "home": {
       "heading": "Web applications and websites that work.",
@@ -28,6 +29,15 @@
       "digitalExperiences": "Crafting digital experiences that transform businesses and connect with audiences in meaningful ways.",
       "story": "Since high school, we’ve been fascinated by the world of websites and applications. While others were just discovering social media, we were spending hours learning HTML, CSS, and JavaScript – the very tools that power today’s digital world.\n\nOver the years, we’ve gained valuable experience – more than five years in web development and three years of focused work on web applications. The more we worked, the more we realized how many businesses and individuals still rely on inefficient or outdated solutions.\n\nThat’s why we founded our company – with a vision to create modern, functional, and well-thought-out digital products that make sense and bring real value. Today, we help clients grow, streamline their processes, and build stronger connections with their audience.",
       "ourStory": "Our story"
+    },
+    "contacts": {
+      "subheading": "Got a question? We're just a message away.",
+      "contactUs": "Contact us",
+      "ourContacts": "Our contacts",
+      "address": "Address",
+      "addressNote": "We're still looking for a permanent address, but we can meet in Brno or online :)",
+      "openingHours": "Opening hours",
+      "openingHoursNote": "We're available anytime – feel free to contact us."
     }
   }
 }
