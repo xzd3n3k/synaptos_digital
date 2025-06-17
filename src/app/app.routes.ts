@@ -3,6 +3,7 @@ import {Home} from './screens/home/home';
 import {DesignSystem} from './screens/design-system/design-system';
 import {OurServices} from './screens/our-services/our-services';
 import {About} from './screens/about/about';
+import {Contacts} from './screens/contacts/contacts';
 
 export const routes: Routes = [
   {
@@ -21,6 +22,10 @@ export const routes: Routes = [
   {
     path: 'about',
     component: About,
+  },
+  {
+    path: 'contacts',
+    component: Contacts,
   },
   {
     path: 'design-system',
