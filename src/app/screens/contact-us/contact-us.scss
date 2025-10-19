@@ -35,6 +35,11 @@ $section-padding: 20px;
     color: transparent;
 }
 
+.text-success {
+    color: green;
+    margin-top: 16px;
+}
+
 .contact-us-section form {
     display: flex;
     flex-direction: row;
@@ -45,10 +50,15 @@ $section-padding: 20px;
     text-align: left;
     position: relative;
 
+    & .required {
+        color: red;
+        padding-left: 1px;
+    }
+
     & .form-row {
         display: flex;
-        flex-direction: row;
-        gap: 16px;
+        flex-direction: column;
+        gap: 8px;
     }
 
     & .form-column {
@@ -69,6 +79,16 @@ $section-padding: 20px;
 
     & input {
         border-radius: 5px;
+    }
+
+    & input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    & input[type=number] {
+        -moz-appearance: textfield;
     }
 
     & textarea {

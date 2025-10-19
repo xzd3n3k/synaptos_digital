@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
-const api_password = require('../src/.env')
+const api_password = require('../src/.env/.env.js')
 
 const app = express();
 const port = 3000;
@@ -21,7 +21,7 @@ app.post('/send-email', (req, res) => {
         service: 'gmail',
         auth: {
             user: 'synaptos.digi@gmail.com', // Your Gmail address
-            pass: api_password     // The App Password generated above
+            //pass: 'hesloDoAppky'     // The App Password generated above
         }
     });
 
@@ -30,16 +30,13 @@ app.post('/send-email', (req, res) => {
         to: 'synaptos.digi@gmail.com',
         subject: 'Poptávka z webu',
         text: `
-      Jméno a příjmení: ${req.body.firstname} ${req.body.lastname}
-      Email: ${email}
-      Poznámka: ${message}
-      Adresa: 
-        Ulice: ${req.body.address.street} ${req.body.address.houseNumber}
-        Město: ${req.body.address.city}
-        PSČ: ${req.body.address.postalCode}
-        Stát: ${req.body.address.country}
-
-      ${req.body.address}
+    Jméno a příjmení: ${req.body.firstname} ${req.body.lastname}
+    Email: ${email}
+    Poznámka: ${message}
+    Ulice: ${req.body.address.street} ${req.body.address.houseNumber}
+    Město: ${req.body.address.city}
+    PSČ: ${req.body.address.postalCode}
+    Stát: ${req.body.address.country}
     `
     };
 
@@ -49,7 +46,7 @@ app.post('/send-email', (req, res) => {
             res.status(500).send(false);
         } else {
             console.log('Email sent:', info.response);
-            res.status(200).send('Email sent successfully');
+            res.status(200).send(true);
         }
     });
 });
