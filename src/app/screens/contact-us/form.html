@@ -1,0 +1,35 @@
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+    <label for="name">
+        Jméno:
+    </label>
+    <input id="name" formControlName="name" type="text" />
+    <label for="surname">
+        Příjmení:
+    </label>
+    <input id="surname" formControlName="surname" type="text" />
+    <div formGroupName="address">
+        <label for="street">
+            Ulice:
+        </label>
+        <input id="street" formControlName="street" type="text" />
+        <label for="houseNumber">
+            Číslo popisné:
+        </label>
+        <input id="houseNumber" formControlName="houseNumber" type="number" />
+        <label for="city">
+            Město:
+        </label>
+        <input id="city" formControlName="city" type="text" />
+        <label for="postalCode">
+            PSČ:
+        </label>
+        <input id="postalCode" formControlName="postalCode" type="number" />
+        <label for="country">
+            Stát:
+        </label>
+        <input id="country" formControlName="country" type="text" />
+    </div>
+
+
+    <button type="submit" [disabled]="formGroup.invalid">Odeslat</button>
+</form>
